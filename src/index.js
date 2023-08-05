@@ -1,10 +1,8 @@
 import './style.css';
 import mkEle from './mkEle.js';
-console.log('hello from index');
+import header from './header.js';
 
-const header = document.createElement('h1');
-header.innerHTML = 'Logo';
-document.body.appendChild(header);
-
-const header2 = mkEle('h1', 'Another');
-document.body.appendChild(header2);
+const mainDiv = document.createElement('div');
+mainDiv.setAttribute('id', 'main');
+document.body.appendChild(mainDiv);
+mainDiv.appendChild(header);
