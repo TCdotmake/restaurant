@@ -1,3 +1,25 @@
-h1{
-    color: red;
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    font-size: 16px;
+    --header-bg: gray;
+}
+ul{
+    list-style-type: none;
+}
+#header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--header-bg);
+    padding: 3rem 0 1rem 0;
+}
+#navBar ul{
+    display: flex;
+    flex-direction: row;
+}
+#navBar ul li{
+    padding: .5rem;
 }
