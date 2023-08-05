@@ -5,8 +5,12 @@ module.exports = {
   mode: "development",
   entry: {
     index: "./src/index.js",
-    mkEle: "./src/mkEle.js",
     header: "./src/header.js",
+    content: "./src/content.js",
+    home: "./src/home.js",
+    menu: './src/menu.js',
+    contact: './src/contact.js',
+    router: './src/router.js',
   },
   devtool: "inline-source-map",
   devServer: {
