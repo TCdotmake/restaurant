@@ -23,7 +23,7 @@ const nameArr = [
   "Morning Kickstarter",
   "Homemade Apple Juice",
   "Summer Refresher",
-  "Green Godess",
+  "Green Goddess",
   "Apple Lemonade",
   "Orange Sunrise",
 ];

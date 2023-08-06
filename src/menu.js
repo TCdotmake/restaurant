@@ -17,7 +17,7 @@ for(let obj of juiceObjArr){
     menuItem.classList.add('menuItem');
     
     //item name
-    const itemName = document.createElement('h3');
+    const itemName = document.createElement('div');
     itemName.innerHTML = obj.name;
     itemName.classList.add('itemName');
     menuItem.appendChild(itemName);
