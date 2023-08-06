@@ -47,3 +47,11 @@ const descArr = [
   "Naturally sweeten immune system booster",
   "Vibrant, energizing blend brimming with vitamin A and C",
 ];
+
+const juiceObjArr = [];
+
+for(let n in nameArr){
+    juiceObjArr.push({name: nameArr[n], ingredients: ingredArr[n], description: descArr[n]});
+}
+
+export default juiceObjArr;
