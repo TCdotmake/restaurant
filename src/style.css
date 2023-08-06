@@ -4,6 +4,32 @@
   font-weight: bold;
   font-style: normal;
 }
+@font-face {
+  font-family: 'roboto';
+  src: url('./fonts/Roboto-Thin-webfont.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'roboto';
+  src: url('./fonts/Roboto-Light-webfont.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'roboto';
+  src: url('./fonts/Roboto-Regular-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'roboto';
+  src: url('./fonts/Roboto-Medium-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+
 
 * {
   padding: 0;
@@ -40,8 +66,14 @@ ul {
   width: 100vw;
 }
 
-.heroText{
+.heroText {
   font-family: "permanent_markerregular";
+}
+
+#heroTextSub{
+  font-family: 'roboto';
+  font-weight: 100;
+  font-size: 3rem;
 }
 
 /*Menu style*/

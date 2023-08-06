@@ -18,6 +18,7 @@ const heroTextSub = document.createElement('p');
 heroText.innerHTML  = 'Should Healthy';
 heroText2.innerHTML = 'Taste Sooooo Good?';
 heroTextSub.innerHTML = '(Yes!)';
+heroTextSub.setAttribute('id', 'heroTextSub');
 heroTextDiv.appendChild(heroText);
 heroTextDiv.appendChild(heroText2);
 heroTextDiv.appendChild(heroTextSub);
