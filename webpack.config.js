@@ -11,6 +11,7 @@ module.exports = {
     menu: './src/menu.js',
     contact: './src/contact.js',
     router: './src/router.js',
+    juiceRecipe: './src/juiceRecipe.js',
   },
   devtool: "inline-source-map",
   devServer: {
