@@ -1,11 +1,13 @@
 *{
     padding: 0;
     margin: 0;
+    
 }
 :root{
     font-size: 16px;
     --header-bg: rgb(237, 130, 100);
     --nav-btn-bg: white;
+    
 }
 ul{
     list-style-type: none;
@@ -24,4 +26,27 @@ ul{
 #navBar ul li{
     padding: .5rem;
     background-color: var(--nav-btn-bg);
+}
+
+.menuSection{
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+}
+
+.menuSubHeading{
+    padding: 1rem;
+    text-align: center;
+}
+
+.ingredientList{
+    display: flex;
+    flex-direction: row;
+}
+.ingredientList li{
+    padding: 0 .5rem;
+}
+
+.itemDescrip{
+    text-align: end;
 }
