@@ -34,7 +34,7 @@ for(let obj of juiceObjArr){
     menuItem.appendChild(ingredientList);
 
     //description
-    const itemDescrip = document.createElement('div');
+    const itemDescrip = document.createElement('p');
     itemDescrip.innerHTML = obj.description;
     itemDescrip.classList.add('itemDescrip');
     menuItem.appendChild(itemDescrip);
