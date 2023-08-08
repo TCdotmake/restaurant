@@ -1,9 +1,13 @@
-import HeroImg from "./img/hero.jpg";
-
+//import HeroImg from './img/glass-green-apple-healthy-smoothie-put-fresh-green-apples.jpg'
+import HeroImg from './img/k15-photos-VOdONjAP_Lk-unsplash.jpg'
 const homeDiv = document.createElement("div");
 homeDiv.setAttribute("id", "homeDiv");
 
 const heroSection = document.createElement("section");
+heroSection.setAttribute('id', 'heroSection');
+const heroImg = new Image();
+heroImg.src = HeroImg;
+heroSection.appendChild(heroImg);
 const heroTextDiv = document.createElement("hgroup");
 const heroText = document.createElement("h1");
 const heroText2 = document.createElement("h1");
@@ -19,6 +23,7 @@ heroTextDiv.appendChild(heroText2);
 heroTextDiv.appendChild(heroTextSub);
 heroSection.appendChild(heroTextDiv);
 homeDiv.appendChild(heroSection);
+
 
 const infoSection = document.createElement("section");
 infoSection.setAttribute("id", "infoSection");
