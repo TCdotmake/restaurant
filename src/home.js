@@ -9,6 +9,7 @@ const heroImg = new Image();
 heroImg.src = HeroImg;
 heroSection.appendChild(heroImg);
 const heroTextDiv = document.createElement("hgroup");
+heroTextDiv.setAttribute('id', 'heroTextDiv');
 const heroText = document.createElement("h1");
 const heroText2 = document.createElement("h1");
 heroText.classList.add("heroText");

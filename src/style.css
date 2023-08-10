@@ -29,6 +29,12 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'gasoekOne';
+  src: url('./fonts/GasoekOne-Regular.ttf') format('ttf');
+  font-weight: bold;
+  font-style: normal;
+}
 
 
 * {
@@ -74,10 +80,14 @@ ul {
   height: 100%;
   overflow: hidden;
   object-fit: cover;
+  grid-area: 1/1/2/2;
 }
 
-.heroText {
-  font-family: "permanent_markerregular";
+#heroTextDiv {
+  font-family: "gasoekOne";
+  font-size: 2rem;
+  color: white;
+  grid-area: 1/1/2/2;
 }
 
 #heroTextSub{
