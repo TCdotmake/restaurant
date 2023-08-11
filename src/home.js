@@ -7,7 +7,9 @@ const heroSection = document.createElement("section");
 heroSection.setAttribute('id', 'heroSection');
 const heroImg = new Image();
 heroImg.src = HeroImg;
-heroSection.appendChild(heroImg);
+
+const heroFilter = document.createElement('Div');
+heroFilter.setAttribute('id', 'heroFilter');
 const heroTextDiv = document.createElement("hgroup");
 heroTextDiv.setAttribute('id', 'heroTextDiv');
 const heroText = document.createElement("h1");
@@ -16,12 +18,14 @@ heroText.classList.add("heroText");
 heroText2.classList.add("heroText");
 const heroTextSub = document.createElement("p");
 heroText.innerHTML = "Should Healthy";
-heroText2.innerHTML = "Taste Sooooo Good?";
+heroText2.innerHTML = "Taste So Good?";
 heroTextSub.innerHTML = "(Yes!)";
 heroTextSub.setAttribute("id", "heroTextSub");
 heroTextDiv.appendChild(heroText);
 heroTextDiv.appendChild(heroText2);
 heroTextDiv.appendChild(heroTextSub);
+heroSection.appendChild(heroImg);
+heroSection.appendChild(heroFilter);
 heroSection.appendChild(heroTextDiv);
 homeDiv.appendChild(heroSection);
 

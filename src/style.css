@@ -82,18 +82,31 @@ ul {
   object-fit: cover;
   grid-area: 1/1/2/2;
 }
+#heroFilter{
+  grid-area: 1/1/2/2;
+  background: radial-gradient(circle at top right, transparent 0%, rgba(0,0,0,0.6) 90%);
+}
 
-#heroTextDiv {
+  #heroTextDiv {
   font-family: "gasoekOne";
-  font-size: 2rem;
   color: white;
   grid-area: 1/1/2/2;
+  margin-left: 5vw;
+  margin-top: 21vw;
+}
+
+.heroText{
+  font-size: 7vw;
+}
+.heroText:first-child{
+  margin-bottom: -1.3vw;
 }
 
 #heroTextSub{
   font-family: 'roboto';
   font-weight: 100;
-  font-size: 3rem;
+  font-size: 4vw;
+  margin-top: -1vw;
 }
 
 /*Menu style*/
