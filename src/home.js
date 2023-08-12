@@ -2,6 +2,32 @@ import InfoImg from "./img/glass-green-apple-healthy-smoothie-put-fresh-green-ap
 import HeroImg from "./img/k15-photos-VOdONjAP_Lk-unsplash.jpg";
 import DetailImg from "./img/nathalie-jolie-IBekPHDDFxQ-unsplash.jpg";
 
+const createList = (arr) => {
+  const list = document.createElement("ul");
+  list.classList.add("infoList");
+  for (let n of arr) {
+    const item = document.createElement("li");
+    item.innerHTML = n;
+    list.appendChild(item);
+  }
+  return list;
+};
+
+const noBullArr = [
+  "No sugar added",
+  "No preservatives",
+  "Not from concentrate",
+  "Non-GMO",
+  "Gluten Free",
+];
+
+const simpleArr = [
+  "Fresh, seasonal fruit",
+  "Juiced to order",
+  "Pulp free",
+  "Crisp, smooth and hydrating",
+];
+
 const homeDiv = document.createElement("div");
 homeDiv.setAttribute("id", "homeDiv");
 
@@ -76,42 +102,27 @@ detailImg.classList.add('stacked-grid')
 // filter
 const detailFilter = document.createElement('div');
 detailFilter.setAttribute('id', 'detailFilter');
+// text
+const detailTextDiv = document.createElement('div');
+detailTextDiv.setAttribute('id', 'detailTextDiv');
+const detailSub = document.createElement('h2');
+detailSub.classList.add('homeSub');
+detailSub.innerHTML='Simple, Pure Joy';
+detailTextDiv.appendChild(detailSub);
+detailTextDiv.appendChild(createList(simpleArr));
 //  assembly
 detailSection.appendChild(detailImg);
 detailSection.appendChild(detailFilter);
+detailSection.appendChild(detailTextDiv);
 homeDiv.append(detailSection);
 
 const infoSection2 = document.createElement("section");
 infoSection2.setAttribute("id", "infoSection2");
 const headerArr = ["Delicious", "No Bull"];
 
-const createList = (arr) => {
-  const list = document.createElement("ul");
-  list.classList.add("infoList");
-  for (let n of arr) {
-    const item = document.createElement("li");
-    item.innerHTML = n;
-    list.appendChild(item);
-  }
-  return list;
-};
 
-const noBullArr = [
-  "No sugar added",
-  "No preservatives",
-  "Not from concentrate",
-  "Non-GMO",
-  "Gluten Free",
-];
 
-const deliciousArr = [
-  "Fresh, seasonal fruit",
-  "Juiced to order",
-  "Pulp free",
-  "Crisp, smooth and hydrating",
-];
-
-const infoContent = [createList(deliciousArr), createList(noBullArr)];
+const infoContent = [createList(simpleArr), createList(noBullArr)];
 
 for (let n in headerArr) {
   const infoDiv = document.createElement("div");
