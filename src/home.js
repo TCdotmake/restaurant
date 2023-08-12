@@ -1,21 +1,25 @@
-import InfoImg from './img/glass-green-apple-healthy-smoothie-put-fresh-green-apples.jpg'
-import HeroImg from './img/k15-photos-VOdONjAP_Lk-unsplash.jpg'
+import InfoImg from "./img/glass-green-apple-healthy-smoothie-put-fresh-green-apples.jpg";
+import HeroImg from "./img/k15-photos-VOdONjAP_Lk-unsplash.jpg";
+
 const homeDiv = document.createElement("div");
 homeDiv.setAttribute("id", "homeDiv");
 
+//hero section
 const heroSection = document.createElement("section");
-heroSection.setAttribute('id', 'heroSection');
-heroSection.classList.add('homeSections')
+heroSection.classList.add("homeSections");
+//  image
 const heroImg = new Image();
 heroImg.src = HeroImg;
-heroImg.classList.add('homeImg');
-heroImg.classList.add('stacked-grid');
-const heroFilter = document.createElement('Div');
-heroFilter.setAttribute('id', 'heroFilter');
-heroFilter.classList.add('stacked-grid');
+heroImg.classList.add("homeImg");
+heroImg.classList.add("stacked-grid");
+//  filter
+const heroFilter = document.createElement("Div");
+heroFilter.setAttribute("id", "heroFilter");
+heroFilter.classList.add("stacked-grid");
+//  text
 const heroTextDiv = document.createElement("hgroup");
-heroTextDiv.setAttribute('id', 'heroTextDiv');
-heroTextDiv.classList.add('stacked-grid')
+heroTextDiv.setAttribute("id", "heroTextDiv");
+heroTextDiv.classList.add("stacked-grid");
 const heroText = document.createElement("h1");
 const heroText2 = document.createElement("h1");
 heroText.classList.add("heroText");
@@ -28,31 +32,37 @@ heroTextSub.setAttribute("id", "heroTextSub");
 heroTextDiv.appendChild(heroText);
 heroTextDiv.appendChild(heroText2);
 heroTextDiv.appendChild(heroTextSub);
+//  assembly
 heroSection.appendChild(heroImg);
 heroSection.appendChild(heroFilter);
 heroSection.appendChild(heroTextDiv);
 homeDiv.appendChild(heroSection);
 
-
+//info section
 const infoSection = document.createElement("section");
-infoSection.setAttribute("id", "infoSection");
-infoSection.classList.add('homeSections');
+infoSection.classList.add("homeSections");
+//  image
 const infoImg = new Image();
 infoImg.src = InfoImg;
-infoImg.classList.add('homeImg');
-infoImg.classList.add('stacked-grid');
-const infoFilter = document.createElement('div');
-infoFilter.setAttribute('id', 'infoFilter');
-infoFilter.classList.add('stacked-grid');
-const infoText = document.createElement('p');
-infoText.setAttribute('id','infoText');
-infoText.classList.add('stacked-grid');
+infoImg.classList.add("homeImg");
+infoImg.classList.add("stacked-grid");
+// filter
+const infoFilter = document.createElement("div");
+infoFilter.setAttribute("id", "infoFilter");
+infoFilter.classList.add("stacked-grid");
+//  text
+const infoText = document.createElement("p");
+infoText.setAttribute("id", "infoText");
+infoText.classList.add("stacked-grid");
 infoText.innerHTML =
   "Whether you are looking to supplement your diet with essential nutrients, jump start your cleanse or boost your immune system, we have a recipe that’s right for you!";
+//  assembly
 infoSection.appendChild(infoImg);
 infoSection.appendChild(infoFilter);
 infoSection.appendChild(infoText);
-  homeDiv.appendChild(infoSection);
+homeDiv.appendChild(infoSection);
+
+
 const infoSection2 = document.createElement("section");
 infoSection2.setAttribute("id", "infoSection2");
 const headerArr = ["Delicious", "No Bull"];
