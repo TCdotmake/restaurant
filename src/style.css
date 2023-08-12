@@ -94,7 +94,7 @@ ul {
 
 #heroTextDiv {
   font-family: "gasoekOne";
-  color: white;
+  color: rgb(255, 147, 206);
   margin-left: 5vw;
   margin-top: 16vw;
 }
@@ -118,7 +118,7 @@ ul {
   background: linear-gradient(290deg, rgba(0,0,0,0.6) 0%, transparent 130%);
 }
 #infoText{
-  color: white;
+  color: rgb(189, 255, 154);
   font-family: 'roboto';
   font-weight: 200;
   padding-left: 60vw;
@@ -131,6 +131,16 @@ ul {
   font-weight: 400;
   font-size: 5vw;
 }
+
+#detailSection{
+  background-color: #d5bf50;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#detailFilter{
+  grid-area: 1/1/2/4;
+  background: linear-gradient(90deg, transparent 0%, transparent 28%, black 33%, black 100%);
+}
+
 /*Menu style*/
 #juiceMenu {
   background-color: var(--juice-menu-bg);

@@ -1,5 +1,6 @@
 import InfoImg from "./img/glass-green-apple-healthy-smoothie-put-fresh-green-apples.jpg";
 import HeroImg from "./img/k15-photos-VOdONjAP_Lk-unsplash.jpg";
+import DetailImg from "./img/nathalie-jolie-IBekPHDDFxQ-unsplash.jpg";
 
 const homeDiv = document.createElement("div");
 homeDiv.setAttribute("id", "homeDiv");
@@ -62,6 +63,23 @@ infoSection.appendChild(infoFilter);
 infoSection.appendChild(infoText);
 homeDiv.appendChild(infoSection);
 
+//Details
+
+const detailSection = document.createElement('section');
+detailSection.classList.add('homeSections');
+detailSection.setAttribute('id','detailSection');
+//  img
+const detailImg = new Image();
+detailImg.src=DetailImg;
+detailImg.classList.add('homeImg');
+detailImg.classList.add('stacked-grid')
+// filter
+const detailFilter = document.createElement('div');
+detailFilter.setAttribute('id', 'detailFilter');
+//  assembly
+detailSection.appendChild(detailImg);
+detailSection.appendChild(detailFilter);
+homeDiv.append(detailSection);
 
 const infoSection2 = document.createElement("section");
 infoSection2.setAttribute("id", "infoSection2");
