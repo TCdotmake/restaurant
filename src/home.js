@@ -1,7 +1,7 @@
 import InfoImg from "./img/glass-green-apple-healthy-smoothie-put-fresh-green-apples.jpg";
 import HeroImg from "./img/k15-photos-VOdONjAP_Lk-unsplash.jpg";
 import DetailImg from "./img/nathalie-jolie-IBekPHDDFxQ-unsplash.jpg";
-
+import NoAddImg from './img/nik-SY_9tGuk98o-unsplash.jpg'
 const createList = (arr) => {
   const list = document.createElement("ul");
   list.classList.add("infoList");
@@ -13,7 +13,7 @@ const createList = (arr) => {
   return list;
 };
 
-const noBullArr = [
+const noAddArr = [
   "No sugar added",
   "No preservatives",
   "Not from concentrate",
@@ -116,24 +116,34 @@ detailSection.appendChild(detailFilter);
 detailSection.appendChild(detailTextDiv);
 homeDiv.append(detailSection);
 
-const infoSection2 = document.createElement("section");
-infoSection2.setAttribute("id", "infoSection2");
-const headerArr = ["Delicious", "No Bull"];
+//noAdditive
+const noAddSection = document.createElement('section');
+noAddSection.setAttribute('id', 'noAddSection');
+noAddSection.classList.add('homeSections')
+//  img
+const noAddImg = new Image();
+noAddImg.src= NoAddImg;
+noAddImg.classList.add('homeImg');
+noAddImg.setAttribute('id','noAddImg');
+//  filter
+const noAddFilter= document.createElement('div');
+noAddFilter.setAttribute('id','noAddFilter');
+//  text
+const noAddTextDiv = document.createElement('div');
+noAddTextDiv.setAttribute('id', 'noAddTextDiv');
+const noAddSub = document.createElement('h2');
+noAddSub.classList.add('homeSub');
+noAddSub.innerHTML='No Additives';
+noAddTextDiv.appendChild(noAddSub);
+const noAddList = createList(noAddArr);
+noAddList.setAttribute('id','noAddList');
+noAddTextDiv.appendChild(noAddList);
+//  assembly
+noAddSection.appendChild(noAddImg);
+noAddSection.appendChild(noAddFilter);
+noAddSection.appendChild(noAddTextDiv);
+homeDiv.appendChild(noAddSection);
 
 
-
-const infoContent = [createList(simpleArr), createList(noBullArr)];
-
-for (let n in headerArr) {
-  const infoDiv = document.createElement("div");
-  infoDiv.classList.add("infoDiv");
-  const infoHeading = document.createElement("h3");
-  infoHeading.classList.add("infoHeading");
-  infoHeading.innerHTML = headerArr[n];
-  infoDiv.appendChild(infoHeading);
-  infoDiv.appendChild(infoContent[n]);
-  infoSection2.appendChild(infoDiv);
-}
-homeDiv.appendChild(infoSection2);
 
 export default homeDiv;
