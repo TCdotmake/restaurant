@@ -70,10 +70,15 @@ ul {
 }
 #header {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  background-color: var(--header-bg);
-  padding: 3rem 0 1rem 0;
+  justify-content: space-between;
+  background-color: black;
+  height: clamp(30px, 4vw, 6vw);
+  padding: 0 5vw;
+}
+#logoImg{
+  height: 100%;
 }
 #navBar ul {
   display: flex;
