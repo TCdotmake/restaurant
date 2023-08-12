@@ -36,6 +36,22 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'righteous';
+  src: url('./fonts/Righteous-Regular.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'bungeeRegular';
+  src: url(./fonts/Bungee-Regular-webfont.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'bebas';
+  src: url('./fonts/Bebas-Regular-webfont.woff') format('woff');
+}
 
 * {
   padding: 0;
@@ -43,7 +59,8 @@
 }
 :root {
   font-size: 12px;
-  font-family: Tahoma, sans-serif;
+  font-family: 'roboto';
+  font-weight: 400;
   --header-bg: rgb(237, 130, 100);
   --nav-btn-bg: white;
   --juice-menu-bg: rgb(188, 230, 188);
@@ -67,6 +84,33 @@ ul {
   background-color: var(--nav-btn-bg);
 }
 
+/*logo styles*/
+#logoDiv{
+  font-family: 'bebas';
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  justify-content: center;
+  align-items: center;
+  padding-left: 7vw;
+}
+#logoSubDiv{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  align-content: center;
+  margin-right: 5.5vw;
+}
+.coldPressSub{
+  font-size: 2vw;
+  text-align: center;
+}
+
+#coldText{transform: scale(4,1);}
+#pressText{transform: scale(3.3,1);}
+#kitchenText{
+  font-size: 5vw;
+}
 /*Home style*/
 
 /*hero image/filter/text*/
@@ -107,7 +151,6 @@ ul {
 }
 
 #heroTextSub{
-  font-family: 'roboto';
   font-weight: 100;
   font-size: 6vw;
   margin-top: -1vw;
@@ -119,7 +162,6 @@ ul {
 }
 #infoText{
   color: rgb(189, 255, 154);
-  font-family: 'roboto';
   font-weight: 400;
   padding-left: 47vw;
   padding-right: 8vw;
@@ -157,7 +199,6 @@ ul {
 }
 #detailTextDiv ul li{
   text-align: end;
-  font-family: 'roboto';
   font-weight: 400;
   font-size: 3vw;
   margin-bottom: 0.3vw;
@@ -186,7 +227,6 @@ ul {
 
 #noAddList li{
   text-align: start;
-  font-family: 'roboto';
   font-weight: 400;
   font-size: 3vw;
   margin-bottom: 0.3vw;
