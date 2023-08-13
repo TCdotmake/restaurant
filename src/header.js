@@ -4,14 +4,15 @@ import homeDiv from "./home.js";
 import menuDiv from "./menu.js";
 import contactDiv from "./contact.js";
 import LogoImg from "./img/Screenshot 2023-08-12 at 7.09.10 PM.png";
-
+import LogoImg2 from './img/Screenshot 2023-08-13 at 11.11.57 AM.png'
 const header = document.createElement("div");
 header.setAttribute("id", "header");
 
 //logo img
 const logoImg = new Image();
-logoImg.src = LogoImg;
+logoImg.src = LogoImg2;
 logoImg.setAttribute("id", "logoImg");
+
 header.appendChild(logoImg);
 
 //navigation btn

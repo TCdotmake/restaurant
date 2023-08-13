@@ -11,6 +11,7 @@ juiceSubHeading.innerHTML = 'Cold Pressed Juice';
 juiceSubHeading.classList.add('menuSubHeading');
 juiceMenuDiv.appendChild(juiceSubHeading);
 const juiceMenuList = document.createElement('ul');
+juiceMenuList.classList.add('menuList');
 juiceMenuDiv.appendChild(juiceMenuList);
 for(let obj of juiceObjArr){
     const menuItem = document.createElement('li');
