@@ -68,6 +68,9 @@
 ul {
   list-style-type: none;
 }
+body{
+  background: black;
+}
 #header {
   display: flex;
   flex-direction: row;
@@ -75,7 +78,7 @@ ul {
   justify-content: space-between;
   background-color: black;
   height: clamp(30px, 4vw, 6vw);
-  padding: 0 5vw;
+  padding: 1vw 3vw;
 }
 #logoImg{
   height: 100%;
@@ -83,10 +86,24 @@ ul {
 #navBar ul {
   display: flex;
   flex-direction: row;
+  gap: 1vw;
 }
-#navBar ul li {
-  padding: 0.5rem;
-  background-color: var(--nav-btn-bg);
+
+.navBtn{
+  padding: .1vw 1vw;
+  color: white;
+  border: 1px solid white;
+  border-radius: 10%;
+  font-size: clamp(12px, 2vw, 3vw);
+}
+
+.navBtn:hover{
+  cursor: pointer;
+}
+
+.selected{
+  background-color: white;
+  color: black;
 }
 
 /*logo styles*/
