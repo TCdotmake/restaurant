@@ -265,8 +265,9 @@ body{
 
 #menuDiv{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
+  gap: 15px;
   justify-content: center;
   align-items: center;
 }
@@ -274,8 +275,9 @@ body{
 
 .menuSection {
   background-color: var(--juice-menu-bg);
-  padding-bottom: 2rem;
+  padding: 3rem 0 4rem 0;  
   width: clamp(350px, 650px, 70vw);
+  border-radius: 5px;
 }
 
 .menuList{
@@ -286,7 +288,8 @@ body{
   gap: 10px;
 }
 .menuSubHeading {
-  padding: 1rem;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
   text-align: center;
 }
 
@@ -295,7 +298,8 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  border: 2px dotted wheat;
+  border: 3px dotted rgb(127, 127, 127);
+  border-radius: 10px;
   width: 23rem;
   height: 10rem;
 }
