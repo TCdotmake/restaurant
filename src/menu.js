@@ -1,9 +1,26 @@
 import juiceObjArr from "./juiceRecipe";
 import sweetArr from "./sweet";
 import savoryArr from "./savory";
+import Drinks from './img/brooke-lark-HjWzkqW1dgI-unsplash.jpg';
+import Baked from './img/blake-carpenter-7sMvmabgXAo-unsplash.jpg';
+import Sandwich from './img/pixzolo-photography-BiWb1Y8wpZk-unsplash.jpg';
 const menuDiv = document.createElement("div");
 menuDiv.setAttribute("id", "menuDiv");
 
+const bgDiv1 = document.createElement('div');
+const bgDiv2 = document.createElement('div');
+const bgDiv3 = document.createElement('div');
+bgDiv1.classList.add('bgDiv');
+bgDiv2.classList.add('bgDiv');
+bgDiv3.classList.add('bgDiv');
+bgDiv1.setAttribute('id','bgDiv1');
+bgDiv2.setAttribute('id','bgDiv2');
+bgDiv3.setAttribute('id','bgDiv3');
+// const drinkImg = new Image();
+// drinkImg.src=Drinks;
+// drinkImg.classList.add('homeImg');
+// drinkImg.setAttribute('id','drinkImg');
+// menuDiv.appendChild(drinkImg);
 //juice section
 const juiceMenuDiv = document.createElement("div");
 juiceMenuDiv.setAttribute("id", "juiceMenu");
@@ -44,7 +61,9 @@ for (let obj of juiceObjArr) {
 
   juiceMenuList.appendChild(menuItem);
 }
-menuDiv.appendChild(juiceMenuDiv);
+
+bgDiv1.appendChild(juiceMenuDiv);
+menuDiv.appendChild(bgDiv1);
 
 function populateMenu(arr, dom) {
   for (let obj of arr) {
@@ -77,7 +96,8 @@ const sweetMenuList = document.createElement("ul");
 sweetMenuList.classList.add("menuList");
 populateMenu(sweetArr,sweetMenuList);
 sweetMenuDiv.appendChild(sweetMenuList);
-menuDiv.appendChild(sweetMenuDiv);
+bgDiv2.appendChild(sweetMenuDiv);
+menuDiv.appendChild(bgDiv2);
 //savory
 const savoryMenuDiv = document.createElement("div");
 savoryMenuDiv.classList.add("menuSection");
@@ -89,6 +109,7 @@ const savoryMenuList = document.createElement("ul");
 savoryMenuList.classList.add("menuList");
 populateMenu(savoryArr,savoryMenuList);
 savoryMenuDiv.appendChild(savoryMenuList);
-menuDiv.appendChild(savoryMenuDiv);
+bgDiv3.appendChild(savoryMenuDiv);
+menuDiv.appendChild(bgDiv3);
 
 export default menuDiv;

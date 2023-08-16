@@ -5,52 +5,52 @@
   font-style: normal;
 }
 @font-face {
-  font-family: 'roboto';
-  src: url('./fonts/Roboto-Thin-webfont.woff') format('woff');
+  font-family: "roboto";
+  src: url("./fonts/Roboto-Thin-webfont.woff") format("woff");
   font-weight: 100;
   font-style: normal;
 }
 @font-face {
-  font-family: 'roboto';
-  src: url('./fonts/Roboto-Light-webfont.woff') format('woff');
+  font-family: "roboto";
+  src: url("./fonts/Roboto-Light-webfont.woff") format("woff");
   font-weight: 200;
   font-style: normal;
 }
 @font-face {
-  font-family: 'roboto';
-  src: url('./fonts/Roboto-Regular-webfont.woff') format('woff');
+  font-family: "roboto";
+  src: url("./fonts/Roboto-Regular-webfont.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: 'roboto';
-  src: url('./fonts/Roboto-Medium-webfont.woff') format('woff');
+  font-family: "roboto";
+  src: url("./fonts/Roboto-Medium-webfont.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'gasoekOne';
-  src: url('./fonts/GasoekOne-Regular.ttf') format('ttf');
+  font-family: "gasoekOne";
+  src: url("./fonts/GasoekOne-Regular.ttf") format("ttf");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'righteous';
-  src: url('./fonts/Righteous-Regular.ttf') format('ttf');
+  font-family: "righteous";
+  src: url("./fonts/Righteous-Regular.ttf") format("ttf");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'bungeeRegular';
-  src: url(./fonts/Bungee-Regular-webfont.woff) format('woff');
+  font-family: "bungeeRegular";
+  src: url(./fonts/Bungee-Regular-webfont.woff) format("woff");
 }
 
 @font-face {
-  font-family: 'bebas';
-  src: url('./fonts/Bebas-Regular-webfont.woff') format('woff');
+  font-family: "bebas";
+  src: url("./fonts/Bebas-Regular-webfont.woff") format("woff");
 }
 
 * {
@@ -59,7 +59,7 @@
 }
 :root {
   font-size: 12px;
-  font-family: 'roboto';
+  font-family: "roboto";
   font-weight: 400;
   --header-bg: rgb(237, 130, 100);
   --off-white: rgb(213, 213, 213);
@@ -69,10 +69,9 @@
 ul {
   list-style-type: none;
 }
-body{
+body {
   background: black;
 }
-
 
 /*header section*/
 #header {
@@ -84,7 +83,7 @@ body{
   height: clamp(30px, 2vw, 4vw);
   padding: 1vw 3vw;
 }
-#logoImg{
+#logoImg {
   max-height: 100%;
   max-width: 35vw;
   width: auto;
@@ -96,26 +95,26 @@ body{
   gap: 1vw;
 }
 
-.navBtn{
-  padding: .1vw 1vw;
+.navBtn {
+  padding: 0.1vw 1vw;
   color: var(--off-white);
   border: 1px solid var(--off-white);
   border-radius: 5px;
   font-size: clamp(12px, 2vw, 3vw);
 }
 
-.navBtn:hover{
+.navBtn:hover {
   cursor: pointer;
 }
 
-.selected{
+.selected {
   background-color: var(--off-white);
   color: black;
 }
 
 /*logo styles*/
-#logoDiv{
-  font-family: 'bebas';
+#logoDiv {
+  font-family: "bebas";
   color: var(--off-white);
   display: grid;
   grid-template-columns: 1fr 1.5fr;
@@ -123,46 +122,52 @@ body{
   align-items: center;
   padding-left: 7vw;
 }
-#logoSubDiv{
+#logoSubDiv {
   display: grid;
   grid-template-rows: 1fr 1fr;
   justify-content: center;
   align-content: center;
   margin-right: 5.5vw;
 }
-.coldPressSub{
+.coldPressSub {
   font-size: 2vw;
   text-align: center;
 }
 
-#coldText{transform: scale(4,1);}
-#pressText{transform: scale(3.3,1);}
-#kitchenText{
+#coldText {
+  transform: scale(4, 1);
+}
+#pressText {
+  transform: scale(3.3, 1);
+}
+#kitchenText {
   font-size: 5vw;
 }
 /*Home style*/
 
 /*hero image/filter/text*/
-.homeSections{
+.homeSections {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 40vw;
   align-content: center;
   justify-content: center;
 }
-.homeImg{
+.homeImg {
   width: 100%;
   height: 100%;
   overflow: hidden;
   object-fit: cover;
-
 }
-.stacked-grid{
+.stacked-grid {
   grid-area: 1/1/2/2;
 }
-#heroFilter{
- 
-  background: radial-gradient(circle at top right, transparent 0%, rgba(0,0,0,0.6) 90%);
+#heroFilter {
+  background: radial-gradient(
+    circle at top right,
+    transparent 0%,
+    rgba(0, 0, 0, 0.6) 90%
+  );
 }
 
 #heroTextDiv {
@@ -172,24 +177,24 @@ body{
   margin-top: 13vw;
 }
 
-.heroText{
+.heroText {
   font-size: 7vw;
 }
-.heroText:first-child{
+.heroText:first-child {
   margin-bottom: -1.3vw;
 }
 
-#heroTextSub{
+#heroTextSub {
   font-weight: 100;
   font-size: 6vw;
   margin-top: -1vw;
 }
 
 /*info section*/
-#infoFilter{
-  background: linear-gradient(290deg, rgba(0,0,0,0.6) 0%, transparent 130%);
+#infoFilter {
+  background: linear-gradient(290deg, rgba(0, 0, 0, 0.6) 0%, transparent 130%);
 }
-#infoText{
+#infoText {
   color: rgb(189, 255, 154);
   font-weight: 400;
   padding-left: 47vw;
@@ -198,20 +203,26 @@ body{
   font-size: 3vw;
   text-align: end;
 }
-#infoText::first-letter{
+#infoText::first-letter {
   font-weight: 400;
   font-size: 5vw;
 }
 
-#detailSection{
+#detailSection {
   background-color: black;
   grid-template-columns: 1.3fr 1fr 1fr;
 }
-#detailFilter{
+#detailFilter {
   grid-area: 1/1/2/4;
-  background: linear-gradient(90deg, transparent 0%, transparent 35%, black 40%, black 100%);
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    transparent 35%,
+    black 40%,
+    black 100%
+  );
 }
-#detailTextDiv{
+#detailTextDiv {
   grid-area: 1/2/2/4;
   color: var(--off-white);
   display: flex;
@@ -220,31 +231,37 @@ body{
   justify-content: center;
   padding-right: 10vw;
 }
-.homeSub{
+.homeSub {
   font-family: "gasoekOne";
   font-size: 6vw;
   color: var(--off-white);
   margin-bottom: 2vw;
 }
-#detailTextDiv ul li{
+#detailTextDiv ul li {
   text-align: end;
   font-weight: 400;
   font-size: 3vw;
   margin-bottom: 0.3vw;
 }
 
-#noAddSection{
+#noAddSection {
   background-color: black;
   grid-template-columns: 1fr 1fr 1.3fr;
 }
-#noAddImg{
+#noAddImg {
   grid-area: 1/3/2/4;
 }
-#noAddFilter{
+#noAddFilter {
   grid-area: 1/1/2/4;
-  background: linear-gradient(270deg, transparent 0%, transparent 35%, black 40%, black 100%);
+  background: linear-gradient(
+    270deg,
+    transparent 0%,
+    transparent 35%,
+    black 40%,
+    black 100%
+  );
 }
-#noAddTextDiv{
+#noAddTextDiv {
   grid-area: 1/1/2/3;
   color: var(--off-white);
   display: flex;
@@ -254,7 +271,7 @@ body{
   padding-left: 10vw;
 }
 
-#noAddList li{
+#noAddList li {
   text-align: start;
   font-weight: 400;
   font-size: 3vw;
@@ -263,24 +280,40 @@ body{
 
 /*Menu style*/
 
-#menuDiv{
-  display: flex;
+#menuDiv {
+  /* display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 15px;
   justify-content: center;
   align-items: center;
 }
 
-
 .menuSection {
+  place-self: center;
   background-color: var(--juice-menu-bg);
-  padding: 3rem 0 4rem 0;  
+  padding: 3rem 0 4rem 0;
   width: clamp(350px, 650px, 70vw);
   border-radius: 5px;
 }
+.bgDiv {
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+}
+#bgDiv1 {
+  background-image: url("./img/brooke-lark-HjWzkqW1dgI-unsplash.jpg");
+}
+#bgDiv2{
+  background-image: url('./img/blake-carpenter-7sMvmabgXAo-unsplash.jpg');
+}
+#bgDiv3{
+  background-image: url('./img/pixzolo-photography-BiWb1Y8wpZk-unsplash.jpg');
+}
 
-.menuList{
+.menuList {
   width: 100%;
   display: flex;
   flex-flow: row wrap;
@@ -298,15 +331,13 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  border: 3px dotted rgb(127, 127, 127);
+  border: 5px dotted rgb(127, 127, 127);
   border-radius: 10px;
   width: 23rem;
   height: 10rem;
 }
 
-
 .itemName {
-  
   text-transform: uppercase;
   text-decoration: underline;
   font-size: 1.35rem;
@@ -314,7 +345,6 @@ body{
 }
 
 .ingredientList {
-  
   display: flex;
   flex-direction: row;
   align-self: flex-end;
@@ -332,6 +362,4 @@ body{
   align-self: flex-end;
   font-size: 1.1rem;
   text-align: end;
-
 }
-
