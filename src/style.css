@@ -63,7 +63,7 @@
   font-weight: 400;
   --header-bg: rgb(237, 130, 100);
   --off-white: rgb(213, 213, 213);
-  --juice-menu-bg: rgb(178, 184, 178);
+  --juice-menu-bg: rgb(204, 212, 204);
   box-sizing: content-box;
 }
 ul {
@@ -185,6 +185,7 @@ body {
 }
 
 #heroTextSub {
+  font-family: 'roboto';
   font-weight: 100;
   font-size: 6vw;
   margin-top: -1vw;
@@ -302,9 +303,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   display: grid;
+  opacity: 80%;
+  padding: 1.5rem 0;
 }
 #bgDiv1 {
-  background-image: url("./img/brooke-lark-HjWzkqW1dgI-unsplash.jpg");
+  background-image: url("./img/food-photographer-jennifer-pallian-AZJjIlbZM60-unsplash.jpg");
 }
 #bgDiv2{
   background-image: url('./img/blake-carpenter-7sMvmabgXAo-unsplash.jpg');
@@ -362,4 +365,14 @@ body {
   align-self: flex-end;
   font-size: 1.1rem;
   text-align: end;
+}
+
+/*contact section*/
+#signUpDiv{
+  color: var(--off-white);
+}
+#signUpSub{
+  font-family: 'roboto';
+  font-size: 4vw;;
+  font-weight: 100;
 }
