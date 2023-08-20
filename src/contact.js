@@ -26,24 +26,30 @@ signUpDiv.appendChild(signUpSub);
 //sign up email
 const emailForm = document.createElement('form');
 
+const emailDiv = document.createElement('div');
+emailDiv.setAttribute('id','emailDiv');
+
 const label = document.createElement('label');
-label.innerHTML='email';
+label.innerHTML='email:';
 label.setAttribute('for','email');
+label.setAttribute('id','label');
 
 const emailInput = document.createElement('input');
 emailInput.setAttribute('type', 'email');
 emailInput.setAttribute('id', 'email');
 emailInput.setAttribute('name', 'email');
 
+emailDiv.appendChild(label);
+emailDiv.appendChild(emailInput);
+
 const submit = document.createElement('input');
 submit.setAttribute('type','submit');
 submit.setAttribute('value', 'Subscribe');
+submit.setAttribute('id', 'submit');
 
-const br = document.createElement('br');
 
-emailForm.appendChild(label);
-emailForm.appendChild(emailInput);
-emailForm.appendChild(br);
+emailForm.appendChild(emailDiv);
+
 emailForm.appendChild(submit);
 
 signUpDiv.appendChild(emailForm);
