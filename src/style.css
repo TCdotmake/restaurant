@@ -464,3 +464,8 @@ input:-internal-autofill-selected{
 .smallText{
   font-size: clamp(16px, 3vw, 3rem);
 }
+
+.icon{
+  height: clamp(30px, 5vw, 6rem)
+
+}

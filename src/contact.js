@@ -1,4 +1,6 @@
-
+import FB from './img/fb_W.png';
+import IN from './img/in_W.png';
+import TW from './img/tw_W.png';
 
 const contactDiv = document.createElement('div');
 contactDiv.setAttribute('id', 'contactDiv');
@@ -119,6 +121,38 @@ address2.innerHTML = 'Port Mariettahaven, NE 60448';
 detailsDiv.appendChild(address2);
 
 contactInfoDiv.appendChild(detailsDiv);
+
+//social
+const socialDiv = document.createElement('div');
+socialDiv.classList.add('contactDiv');
+const socialSub = document.createElement('h3');
+socialSub.classList.add('contactSub');
+socialSub.innerHTML = 'Stay Connected';
+socialDiv.appendChild(socialSub);
+
+// const fbIcon = document.createElement('object');
+// fbIcon.setAttribute('type','image/svg+xml');
+// fbIcon.setAttribute('data', './img/facebook.svg');
+// fbIcon.classList.add('icon');
+// socialDiv.appendChild(fbIcon);
+
+const fb = new Image();
+fb.src = FB;
+fb.classList.add('icon');
+socialDiv.appendChild(fb);
+
+const tw = new Image();
+tw.src = TW;
+tw.classList.add('icon');
+socialDiv.appendChild(tw);
+
+const ins = new Image();
+ins.src = IN;
+ins.classList.add('icon');
+socialDiv.appendChild(ins);
+
+
+contactInfoDiv.appendChild(socialDiv);
 
 contactDiv.appendChild(contactInfoDiv);
 
