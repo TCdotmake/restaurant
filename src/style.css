@@ -368,15 +368,26 @@ body {
 }
 
 /*contact section*/
-#signUpDiv {
+#contactDiv{
   color: var(--off-white);
-  margin: clamp(2rem, 10%, 20%);
+  display: flex;
+  flex-direction: column;
 }
-#signUpSub {
+#signUpDiv {
+  margin: clamp(2rem, 10%, 20%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#signUpHeader{
+  margin-bottom: 0;
+}
+.contactSub {
   font-family: "roboto";
   font-size: clamp(4vw, 6vw, 6rem);
   font-weight: 100;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 95%;
 }
 
 
@@ -417,7 +428,6 @@ input[type='email']{
   background: transparent;
   border: none;
   border-bottom: 1px solid var(--off-white);
-  color: var(--off-white)
 }
 
 input:focus{
@@ -425,13 +435,32 @@ input:focus{
 }
 input:-internal-autofill-selected{
   background: transparent;
-  color: var(--off-white);
 }
 
 #submit{
   border: 1px solid var(--off-white);
   border-radius: 5px;
   background: transparent;
-  color: var(--off-white);
   padding:clamp(.25vw, .5vw, .5rem) clamp(.5vw, 1vw, 1rem);
+  color: var(--off-white);
+}
+
+/*contact info container*/
+#contactInfoDiv{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+#contactInfoDiv div{
+  flex-grow: 0;
+  width: 350px;
+}
+
+/*hours*/
+.contactItem{
+  display: flex;
+  flex-direction: row;
+}
+.smallText{
+  font-size: clamp(16px, 3vw, 3rem);
 }
