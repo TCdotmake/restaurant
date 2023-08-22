@@ -1,9 +1,6 @@
 import juiceObjArr from "./juiceRecipe";
 import sweetArr from "./sweet";
 import savoryArr from "./savory";
-import Drinks from './img/brooke-lark-HjWzkqW1dgI-unsplash.jpg';
-import Baked from './img/blake-carpenter-7sMvmabgXAo-unsplash.jpg';
-import Sandwich from './img/pixzolo-photography-BiWb1Y8wpZk-unsplash.jpg';
 const menuDiv = document.createElement("div");
 menuDiv.setAttribute("id", "menuDiv");
 

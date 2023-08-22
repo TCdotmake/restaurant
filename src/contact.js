@@ -1,7 +1,7 @@
 import FB from './img/fb_W.png';
 import IN from './img/in_W.png';
 import TW from './img/tw_W.png';
-
+import Fruit from './img/food-photographer-jennifer-pallian-AZJjIlbZM60-unsplash.jpg';
 const contactDiv = document.createElement('div');
 contactDiv.setAttribute('id', 'contactDiv');
 
@@ -10,20 +10,24 @@ contactDiv.setAttribute('id', 'contactDiv');
 const signUpDiv = document.createElement('div');
 signUpDiv.setAttribute('id', 'signUpDiv');
 
+const textDiv = document.createElement('div');
+textDiv.setAttribute('id', 'textDiv');
+textDiv.classList.add('stacked-grid');
+
 //sign up header
 const signUpHeader = document.createElement('h1');
 signUpHeader.innerHTML = "Let's get Connected!";
 signUpHeader.classList.add('heroText');
 signUpHeader.setAttribute('id', 'signUpHeader');
 
-signUpDiv.appendChild(signUpHeader);
+// signUpDiv.appendChild(signUpHeader);
 
 //sign up sub
 const signUpSub = document.createElement('p');
 signUpSub.innerHTML = 'Get updates on new items and special events';
 signUpSub.classList.add('contactSub');
 
-signUpDiv.appendChild(signUpSub);
+// signUpDiv.appendChild(signUpSub);
 
 //sign up email
 const emailForm = document.createElement('form');
@@ -51,8 +55,18 @@ submit.setAttribute('id', 'submit');
 
 emailForm.appendChild(emailDiv);
 emailForm.appendChild(submit);
-signUpDiv.appendChild(emailForm);
+// signUpDiv.appendChild(emailForm);
 
+const fruitImg = new Image();
+fruitImg.src = Fruit;
+fruitImg.classList.add('homeImg');
+fruitImg.classList.add('stacked-grid');
+
+textDiv.appendChild(signUpHeader);
+textDiv.appendChild(signUpSub);
+textDiv.appendChild(emailForm);
+// signUpDiv.appendChild(fruitImg);
+signUpDiv.appendChild(textDiv);
 contactDiv.appendChild(signUpDiv); 
 
 // contact info container
@@ -77,7 +91,7 @@ hourDiv.classList.add('contactDiv');
 // sub heading
 const hourSub = document.createElement('h3');
 hourSub.classList.add('contactSub');
-hourSub.innerHTML='Opening Hours';
+hourSub.innerHTML='Hours';
 hourDiv.appendChild(hourSub);
 
 // hour list
@@ -97,7 +111,7 @@ for(let i in dayArr){
 }
 hourDiv.appendChild(hourList);
 
-contactInfoDiv.appendChild(hourDiv);
+
 
 //contact
 const detailsDiv = document.createElement('div');
@@ -107,21 +121,26 @@ const detailSub = document.createElement('h3');
 detailSub.classList.add('contactSub');
 detailSub.innerHTML = 'Contact';
 detailsDiv.appendChild(detailSub);
-const phone = document.createElement('p');
-phone.innerHTML = '(123) 456-7890';
-detailsDiv.appendChild(phone);
-const email = document.createElement('p');
-email.innerHTML = 'info@coldpressedkitchen.com';
-detailsDiv.appendChild(email);
-const address1 = document.createElement('p');
-address1.innerHTML = '915 Wiegand Road';
-detailsDiv.appendChild(address1);
-const address2 = document.createElement('p');
-address2.innerHTML = 'Port Mariettahaven, NE 60448';
-detailsDiv.appendChild(address2);
+
+const addressArr = [
+    '(123) 456-7890',
+    'info@cpk.com',
+    '501 NE LAKE DR',
+    'Lake City, FL 32055',
+];
+
+const contactInfo = document.createElement('div');
+contactInfo.setAttribute('id', 'addressDiv');
+for(let n of addressArr){
+    const p = document.createElement('p');
+    p.innerHTML = n;
+    contactInfo.appendChild(p);
+}
+detailsDiv.appendChild(contactInfo);
+
 
 contactInfoDiv.appendChild(detailsDiv);
-
+contactInfoDiv.appendChild(hourDiv);
 //social
 const socialDiv = document.createElement('div');
 socialDiv.classList.add('contactDiv');
@@ -130,31 +149,30 @@ socialSub.classList.add('contactSub');
 socialSub.innerHTML = 'Stay Connected';
 socialDiv.appendChild(socialSub);
 
-// const fbIcon = document.createElement('object');
-// fbIcon.setAttribute('type','image/svg+xml');
-// fbIcon.setAttribute('data', './img/facebook.svg');
-// fbIcon.classList.add('icon');
-// socialDiv.appendChild(fbIcon);
+const iconDiv = document.createElement('div');
+iconDiv.setAttribute('id', 'iconDiv');
 
 const fb = new Image();
 fb.src = FB;
 fb.classList.add('icon');
-socialDiv.appendChild(fb);
+iconDiv.appendChild(fb);
 
 const tw = new Image();
 tw.src = TW;
 tw.classList.add('icon');
-socialDiv.appendChild(tw);
+iconDiv.appendChild(tw);
 
 const ins = new Image();
 ins.src = IN;
 ins.classList.add('icon');
-socialDiv.appendChild(ins);
+iconDiv.appendChild(ins);
+socialDiv.appendChild(iconDiv);
 
 
-contactInfoDiv.appendChild(socialDiv);
+
+// contactInfoDiv.appendChild(socialDiv);
 
 contactDiv.appendChild(contactInfoDiv);
-
+contactDiv.appendChild(socialDiv);
 
 export default contactDiv;
