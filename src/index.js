@@ -2,9 +2,7 @@ import './style.css';
 import header from './header.js';
 import homeDiv from './home';
 import contentDiv from './content';
-import juiceObjArr from './juiceRecipe';
-import sweetArr from './sweet';
-import savoryArr from './savory';
+import footerDiv from './footer';
 
 const mainDiv = document.createElement('div');
 mainDiv.setAttribute('id', 'main');
@@ -14,6 +12,4 @@ mainDiv.appendChild(header);
 mainDiv.appendChild(contentDiv);
 contentDiv.appendChild(homeDiv);
 
-console.log(juiceObjArr);
-console.log(sweetArr);
-console.log(savoryArr);
+mainDiv.append(footerDiv);

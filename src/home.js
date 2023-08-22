@@ -1,7 +1,7 @@
-import InfoImg from "./img/glass-green-apple-healthy-smoothie-put-fresh-green-apples.jpg";
-import HeroImg from "./img/k15-photos-VOdONjAP_Lk-unsplash.jpg";
-import DetailImg from "./img/nathalie-jolie-IBekPHDDFxQ-unsplash.jpg";
-import NoAddImg from './img/nik-SY_9tGuk98o-unsplash.jpg'
+import InfoImg from "./img/green.jpg";
+import HeroImg from "./img/red.jpg";
+import DetailImg from "./img/pom.jpg";
+import NoAddImg from './img/waterMelon.jpg'
 const createList = (arr) => {
   const list = document.createElement("ul");
   list.classList.add("infoList");

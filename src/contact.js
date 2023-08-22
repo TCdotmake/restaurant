@@ -1,7 +1,7 @@
 import FB from './img/fb_W.png';
 import IN from './img/in_W.png';
 import TW from './img/tw_W.png';
-import Fruit from './img/food-photographer-jennifer-pallian-AZJjIlbZM60-unsplash.jpg';
+
 const contactDiv = document.createElement('div');
 contactDiv.setAttribute('id', 'contactDiv');
 
@@ -56,11 +56,6 @@ submit.setAttribute('id', 'submit');
 emailForm.appendChild(emailDiv);
 emailForm.appendChild(submit);
 // signUpDiv.appendChild(emailForm);
-
-const fruitImg = new Image();
-fruitImg.src = Fruit;
-fruitImg.classList.add('homeImg');
-fruitImg.classList.add('stacked-grid');
 
 textDiv.appendChild(signUpHeader);
 textDiv.appendChild(signUpSub);

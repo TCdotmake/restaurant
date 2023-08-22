@@ -2,16 +2,18 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  mode: "development",
+  mode: "production",
   entry: {
-    index: "./src/index.js",
-    header: "./src/header.js",
+    contact: "./src/contact.js",
     content: "./src/content.js",
+    footer: "./src/footer.js",
+    header: "./src/header.js",
     home: "./src/home.js",
-    menu: './src/menu.js',
-    contact: './src/contact.js',
-    router: './src/router.js',
-    juiceRecipe: './src/juiceRecipe.js',
+    index: "./src/index.js",
+    juiceRecipe: "./src/juiceRecipe.js",
+    menu: "./src/menu.js",
+    router: "./src/router.js",
+    savory: "./src/savory.js",
   },
   devtool: "inline-source-map",
   devServer: {
@@ -39,9 +41,13 @@ module.exports = {
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
-        type: 'asset/resource',
+        type: "asset/resource",
       },
     ],
+  },
+  performance: {
+    maxEntrypointSize: 512000,
+    maxAssetSize: 512000,
   },
   optimization: {
     runtimeChunk: "single",
