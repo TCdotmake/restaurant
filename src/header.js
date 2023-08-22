@@ -4,7 +4,7 @@ import LogoImg2 from './img/Screenshot 2023-08-13 at 11.11.57 AM.png'
 const header = document.createElement("div");
 header.setAttribute("id", "header");
 
-//logo img
+//logo img d
 const logoImg = new Image();
 logoImg.src = LogoImg2;
 logoImg.setAttribute("id", "logoImg");

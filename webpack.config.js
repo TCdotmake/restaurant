@@ -15,7 +15,8 @@ module.exports = {
     router: "./src/router.js",
     savory: "./src/savory.js",
   },
-  devtool: "inline-source-map",
+  // devtool: "inline-source-map",
+  devtool:false,
   devServer: {
     static: "./dist",
   },
@@ -46,10 +47,12 @@ module.exports = {
     ],
   },
   performance: {
-    maxEntrypointSize: 512000,
-    maxAssetSize: 512000,
+    hints: false,
+    maxAssetSize: 10000000
   },
   optimization: {
-    runtimeChunk: "single",
+    splitChunks: {
+      chunks: 'all',
+    },
   },
 };
